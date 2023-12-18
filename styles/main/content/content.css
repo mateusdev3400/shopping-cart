@@ -1,0 +1,102 @@
+.content {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__space {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+
+.content__group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.content__group-division {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.content__title {
+    font-family: var(--chakra-petch-font);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.content__title-cart {
+    font-family: var(--inter-font);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content__text {
+    font-family: var(--inter-font);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.content__emphasis {
+    color: var(--blue-color);
+    font-weight: bold;
+}
+
+.content__subtitle {
+    color: var(--blue-color);
+    font-family: var(--inter-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.content__image {
+    width: auto;
+    margin: 20px 0;
+}
+
+.content__input {
+    border: 1px solid var(--blue-color);
+    border-radius: 8px;
+    font-family: var(--inter-font);
+    font-size: 1.5em;
+    font-style: italic;
+    padding: 0.5em;
+    width: 15%;
+
+    /* Remove the dropdown arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.content__input-shop {
+    background: url('../../../images/arrow-down.svg') no-repeat right 1rem top 50%;
+    width: 55%;
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content__input {
+        width: 100%;
+    }
+
+    .content__image-shop {
+        width: 100%;
+    }
+
+    .product-cart {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

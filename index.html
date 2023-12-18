@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="shortcut icon" href="images/icon-shop.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- MAIN -->
+    <main class="container">
+        <article class="content">
+            <section class="shop-cart content__space">
+                <h1 class="content__title">
+                    Carrinho de <span class="content__emphasis">compras</span>
+                </h2>
+
+                <div class="content__group">
+                    <h2 class="content__subtitle">Produto</h2>
+
+                    <select class="content__input content__input-shop" id="stock-product-list"></select>
+                </div>
+
+                <div class="content__group">
+                    <h2 class="content__subtitle">Qtde.</h2>
+
+                    <div class="content__group-division">
+                        <input type="number" id="amount" placeholder="100" class="content__input"/>
+                        <button onclick="addProductsInCart()" class="form__button form__button-blue" id="button-add">Adicionar</button>
+                        <button onclick="removeProductsFromCart()" class="form__button form__button-black" id="button-remove">Limpar</button>
+                    </div>
+                </div>
+
+                <img src="images/glasses.png" alt="Imagem de um óculos" class="content__image content__image-shop"/>
+            </section>
+
+            <section class="content__space">
+                <img src="images/shop-cart-gray.svg" alt="Imagem de um carrinho de compras" class="content__image content__image-product"/>
+
+                <div class="product-cart content__group content__space">
+                    <div class="content__group-division">
+                        <img src="images/icon-shop.svg" alt="Icone de um carrinho de compras"/>
+                        <h2 class="content__subtitle">Produtos no carrinho</h2>
+                    </div>
+
+                    <div class="content__group" id="list-added-products"></div>
+                </div>
+
+                <hr class="content__line"/>
+
+                <h2 class="content__title-cart" id="list-total-values"></h2>
+            </section>
+        </section>
+    </main>
+    <!-- MAIN -->
+
+    <!-- SCRIPTS -->
+    <script src="js/app.js" type="module"></script>
+    <!-- SCRIPTS -->
+</body>
+</html>
